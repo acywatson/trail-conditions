@@ -1,0 +1,20 @@
+<div class='container'>
+<h3>{{ message }}</h3>
+{% if good_to_go %}
+	<h1> YES </h1>
+{% else %}
+	<h1> NO </h1>
+{% endif %}
+<h4>{{ yes_votes }}</h4>
+<h4>{{ no_votes }}</h4>
+<div class='vote-button'>
+    <form action='#' method='get'>
+        <input type='submit' class='button' value='Agree' name='yes-vote'>
+    </form>
+</div>
+<div class='vote-button'>
+    <form action='#' method='get'>
+        <input type='submit' class='button' value='Disagree' name='no-vote'>
+    </form>
+</div>
+</div>
