@@ -1,9 +1,10 @@
 import requests
+from trail_conditions.config import DarkSkyConfig
 
 
 class DarkSkyApiService:
 	def __init__(self):
-		self.key = '81c4862c410f9444f5298ab81b9ac48c'
+		self.key = DarkSkyConfig.dark_sky_key
 		self.lat = '40.494312'
 		self.lng = '-111.830759'
 		self.exclude = 'currently, flags'
